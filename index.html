@@ -10,7 +10,20 @@
     <h2 id="currentPlayer">Активный участник: Участник 1</h2>
     <button id="startBtn">Начать запись</button>
     <button id="stopBtn">Остановить запись</button>
-    <button id="listen" disabled>Слушать</button>
+    <button id="listen" style="display: none;">Слушать</button>
+    <button id="next" style="display: none;">Далее</button>
+
+    <div id="guess" style="display: none;">
+        <div style="display: flex;">
+            <input type="text" id="guess__input">
+            <button id="guess__confirm">Подтвердить</button>
+        </div>
+
+        <div id="guess__isRight" style="display: none;">
+            <button>Да</button>
+            <button>Нет</button>
+        </div>
+    </div>
 
     <script src="./main.js"></script>
 </body>
